@@ -24,8 +24,8 @@ jobs:
       - name: build with maven
         run: ./mvnw  clean  package
         
-      - name: list build/libs directory
-        run:  ls -al  ./build/libs  
+      - name: list target directory
+        run:  ls -al  ./target  
 
       - name: run springboot application
         run: |
